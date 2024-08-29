@@ -1,0 +1,145 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D4AF37;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px; /* Limita a largura máxima da área do conteúdo */
+    padding: 20px;
+}
+
+.texto-grande {
+    font-size: 48px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.logo-imagem {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px; 
+    display: block;
+}
+
+.tabuleiro-genius {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.botao-cor {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#verde { background-color: green; }
+#vermelho { background-color: red; }
+#amarelo { background-color: yellow; }
+#azul { background-color: blue; }
+
+.botao-selecao {
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+    width: 200px;
+    text-align: center;
+}
+
+.botao-selecao:hover {
+    background-color: #218838;
+}
+
+#pontuacao {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #000;
+    text-align: center;
+}
+
+#container-historico {
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+#container-historico h2 {
+    font-size: 24px;
+    color: #000;
+}
+
+#lista-historico {
+    list-style: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#lista-historico li {
+    font-size: 18px;
+    color: #000;
+    margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+    .tabuleiro-genius {
+        grid-template-columns: repeat(2, 80px);
+        gap: 8px;
+    }
+
+    .botao-cor {
+        width: 80px;
+        height: 80px;
+    }
+
+    .texto-grande {
+        font-size: 36px;
+    }
+
+    .botao-selecao {
+        width: 160px;
+        font-size: 18px;
+        padding: 12px 20px;
+    }
+
+    .logo-imagem {
+        max-width: 80%; /* Reduz a largura máxima da imagem em dispositivos móveis */
+    }
+
+    #pontuacao {
+        font-size: 20px;
+    }
+
+    #container-historico h2 {
+        font-size: 20px;
+    }
+
+    #lista-historico li {
+        font-size: 16px;
+    }
+}

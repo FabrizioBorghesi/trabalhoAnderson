@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Genius</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="texto-grande">Jogo Genius</h1>
+        <div class="tabuleiro-genius">
+            <div class="botao-cor" id="verde"></div>
+            <div class="botao-cor" id="vermelho"></div>
+            <div class="botao-cor" id="amarelo"></div>
+            <div class="botao-cor" id="azul"></div>
+        </div>
+        <button class="botao-selecao" id="iniciar-jogo">Iniciar Jogo</button>
+        <button class="botao-selecao" id="reiniciar-jogo">Reiniciar Jogo</button>
+        <p id="pontuacao">Sequências corretas: 0</p>
+
+        <div id="container-historico">
+            <h2>Histórico de Jogos</h2>
+            <ul id="lista-historico"></ul>
+            <button class="botao-selecao" id="limpar-historico">Limpar Histórico</button>
+        </div>
+
+        <button class="botao-selecao" id="voltar">Voltar</button>
+    </div>
+    <script src="jogo.js"></script>
+</body>
+</html>
